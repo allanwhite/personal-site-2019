@@ -2,6 +2,8 @@
 
 For this year's personal site, I've been wanting to learn some more advanced static-site generators, such as the React-based Gatsby. This stack is based off a starter template to build amazing static websites with Gatsby, Contentful and Netlify. Inspired by [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/59051c8c-883c-459c-ba33-7868a6cf77b0/deploy-status)](https://app.netlify.com/sites/allanwhite/deploys)
+
 ## Features
 
 - Contentful integration with ready to go placeholder content

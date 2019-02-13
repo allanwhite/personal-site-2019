@@ -69,6 +69,11 @@ export const query = graphql`
               excerpt(pruneLength: 80)
             }
           }
+          bodyBlocks {
+            childContentfulRichText {
+              html
+            }
+          }
         }
       }
     }

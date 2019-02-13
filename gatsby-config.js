@@ -1,4 +1,7 @@
 const config = require('./src/utils/siteConfig')
+// npm i @contentful/rich-text-types
+const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types')
+
 let contentfulConfig
 
 try {
@@ -163,5 +166,35 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
+    {
+      resolve: '@contentful/gatsby-transformer-contentful-richtext',
+      options: {
+        renderOptions: {
+          /*
+           * Defines custom html string for each node type like heading, embedded entries etc..
+           */
+          renderNode: {
+            // Example
+            [INLINES.ASSET_HYPERLINK]: node => {
+              return `<img class='custom-asset' src="${
+                node.data.target.fields.file['en-US'].url
+              }"/>`
+            },
+            [INLINES.EMBEDDED_ENTRY]: node => {
+              return `<div class='custom-entry' />${
+                node.data.target.fields.name['en-US']
+              }</div>`
+            },
+          },
+          /*
+           * Defines custom html string for each mark type like bold, italic etc..
+           */
+          renderMark: {
+            // Example
+            [MARKS.BOLD]: text => `<custom-bold>${text}<custom-bold>`,
+          },
+        },
+      },
+    },
   ],
 }
