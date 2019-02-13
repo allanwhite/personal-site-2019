@@ -1,8 +1,6 @@
-# gatsby-starter-gcn
+# Personal Site 2019
 
-A starter template to build amazing static websites with Gatsby, Contentful and Netlify. Inspired by [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
-
-For Gatsby `v1` please use the [v1 branch](https://github.com/ryanwiemer/gatsby-starter-gcn/tree/v1)
+For this year's personal site, I've been wanting to learn some more advanced static-site generators, such as the React-based Gatsby. This stack is based off a starter template to build amazing static websites with Gatsby, Contentful and Netlify. Inspired by [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
 
 ## Features
 
@@ -24,11 +22,13 @@ For Gatsby `v1` please use the [v1 branch](https://github.com/ryanwiemer/gatsby-
 
 ## Demo
 
-https://gcn.netlify.com/
-
-![](screenshots/demo.jpg)
+https://allanwhite.netlify.com/
 
 ## Getting Started
+
+This fork diverges a bit, towards the approaches outlined in Contentful's [article here.](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
+
+> Time to check out your new website - preview changes in a local environment by running your website using the `npm run dev` command. This uses the _Contentful Preview API_ to show unpublished content as if they were already published - perfect for a development or staging environment.
 
 ### Install
 
